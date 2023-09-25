@@ -2,6 +2,7 @@
 
 // Given the string, check if it is a palindrome.
 
+// Penélope + Yasmin + Vanessa + Tatiane + Rosana
 var isPalindrome = function(head) {
   let current = head 
   let list = []
@@ -23,7 +24,6 @@ var isPalindrome = function(head) {
   return true
 
 }
-
 
 /// ==== swift? ====
 // func checkPalindrome(inputString: String) -> Bool {
