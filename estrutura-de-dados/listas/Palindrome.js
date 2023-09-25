@@ -2,20 +2,27 @@
 
 // Given the string, check if it is a palindrome.
 
-function checkPalindrome(inputString) {
-  let reversedString = '';
-  const lastIndex = inputString.length - 1;
+var isPalindrome = function(head) {
+  let current = head 
+  let list = []
+  while (current !== null) { 
+      list.push(current.val)
+      current = current.next
+  } 
 
-  for (let i = lastIndex; i >= 0; i--) {
-    const char = inputString[i];
-    reversedString += char;
+  let i = 0
+  let j = list.length - 1
+  while (i < j) {
+      if (list[i] !== list[j]) {
+          return false
+      }
+      i++
+      j--
   }
 
-  return inputString === reversedString;
-}
+  return true
 
-console.log(checkPalindrome('aabaa'));
-console.log(checkPalindrome('abac'));
+}
 
 
 /// ==== swift? ====
